@@ -12,9 +12,9 @@ nn_params = {
     'CA': (-5800, -12.9), 'TG': (-5800, -12.9),
     'GT': (-6500, -17.3), 'AC': (-6500, -17.3),
     'CT': (-7800, -20.8), 'AG': (-7800, -20.8),
-    'GA': (-8200, -22.2), 'TC': (-8200, -22.2),
-    'CG': (-11000, -28.4),
-    'GC': (-10600, -27.2),
+    'GA': (-5600, -13.5), 'TC': (-5600, -13.5),
+    'CG': (-11900, -27.8),
+    'GC': (-11100, -26.7),
     'GG': (-11000, -26.6), 'CC': (-11000, -26.6),
 }
 
@@ -34,6 +34,7 @@ st.markdown("여러 개의 시퀀스를 줄 단위로 입력하세요. (각 줄 
 st.markdown("Breslauer et al. (1986) ΔH/ΔS 파라미터 기반 계산 (Na⁺ 50 mM, Oligo 0.5 µM for KOD FX NEO polymerase)")
 st.markdown("⚠️주의⚠️")
 st.markdown("사용하고자 하는 polymerase 제품마다 계산에 반영하는 parameter, 고려하는 요소가 다를 수 있습니다. 본 calculator를 활용하기 전에, 제품의 manual을 꼭 확인하시기 바랍니다 :)")
+st.markdown("Developed by SH Nam / Reviewed by DY Baek")
 
 # Input area
 seq_input = st.text_area("Enter one DNA sequence per line", height=200,
