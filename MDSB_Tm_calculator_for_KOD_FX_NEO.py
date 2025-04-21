@@ -34,7 +34,6 @@ st.markdown("여러 개의 시퀀스를 줄 단위로 입력하세요. (각 줄 
 st.markdown("Breslauer et al. (1986) ΔH/ΔS 파라미터 기반 계산 (Na⁺ 50 mM, Oligo 0.5 µM for KOD FX NEO polymerase)")
 st.markdown("⚠️주의⚠️")
 st.markdown("사용하고자 하는 polymerase 제품마다 계산에 반영하는 parameter, 고려하는 요소가 다를 수 있습니다. 본 calculator를 활용하기 전에, 제품의 manual을 꼭 확인하시기 바랍니다 :)")
-st.markdown("Developed by SH Nam / Reviewed by DY Baek")
 
 # Input area
 seq_input = st.text_area("Enter one DNA sequence per line", height=200,
@@ -91,3 +90,7 @@ if st.button("Calculate Tm for all sequences"):
         df = pd.DataFrame(results, columns=["ID", "Sequence", "Calculated Tm"])
         st.markdown(f"**입력 조건:** Na⁺ = `{na_conc}` M, Oligo = `{oligo_conc:.2e}` M")
         st.dataframe(df, use_container_width=True)
+
+
+st.markdown("")
+st.markdown("POSTECH MDSB lab., Developed by SH Nam / Reviewed by DY Baek")
