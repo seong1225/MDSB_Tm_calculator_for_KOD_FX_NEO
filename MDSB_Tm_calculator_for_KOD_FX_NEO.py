@@ -93,4 +93,4 @@ if st.button("Calculate Tm for all sequences"):
 
 
 st.markdown("")
-st.markdown("POSTECH MDSB lab., Developed by SH Nam / Reviewed by DY Baek")
+st.markdown("POSTECH MDSB lab., Developed by SH Nam / Revised by DY Baek")
